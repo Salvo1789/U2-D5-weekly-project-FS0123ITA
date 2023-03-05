@@ -46,7 +46,7 @@ nav * {
 }
 
 nav .navButton {
-    flex: 1 0 100px;
+    flex: 1 0 50px;
     height: 50px;
     font-weight: 400;
 }
@@ -264,6 +264,7 @@ nav button{
     border-top: 1px solid rgba(230, 230, 230, 1);
     display: flex;
     width: 100%;
+    flex-direction: row;
 }
 
 .olderArticles .griglia{
@@ -289,9 +290,95 @@ nav button{
     left: -20px;
 }
 
+.olderArticles .griglia .blocco .article .title{
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgba(41, 41, 41, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
+}
+
 .olderArticles .griglia .blocco img{
     width: 200px;
     height: 134px;
     margin:0;
     padding:0;
+}
+
+aside{
+    grid-column: 9 / span 4;
+    grid-row-start: 1;
+    min-height: 100vh;
+    width: 40%;
+}
+
+aside .sidebar{
+    position: sticky;
+    color: rgba(0,0,0,0.8);
+}
+
+aside .sidebar .keywords{
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .sidebar .keywords .intro{
+    margin-bottom: 16px;
+}
+
+aside .sidebar .keywords .intro h2{
+    letter-spacing: 0;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(41, 41, 41, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+aside .sidebar .keywords .linkList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+aside .sidebar .keywords .linkList p{
+    border-radius: 3px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    padding: 6px 16px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    
+}
+
+aside .sidebar .helpAndMore{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px 0;
+}
+
+aside .sidebar .helpAndMore div{
+    margin-right: 26px;
+    margin-bottom: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
