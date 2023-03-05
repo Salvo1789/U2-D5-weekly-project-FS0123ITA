@@ -209,11 +209,29 @@ nav button{
     vertical-align: middle;
 }
 
+.olderArticles .griglia .blocco{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex:1 1 auto;
+    align-items: center;
+}
+
 .olderArticles .griglia .blocco .article .author img{
     width: 20px;
     height: 20px;
     border-radius: 4px;
     vertical-align: middle;
+}
+
+.olderArticles .griglia .blocco img{
+    width: 200px;
+    height: 134px;
+    vertical-align: middle;
+    margin-left:10px;
 }
 
 .blocco .article .title{
@@ -261,6 +279,14 @@ nav button{
     width: 100%;
     display: flex;
     flex-direction: row;
+}
+
+.olderArticles .griglia .blocco .article{
+    margin-right: 20px;
+    min-width: 0%;
+    width: 100%;
+    position: relative;
+    left: -20px;
 }
 
 .olderArticles .griglia .blocco img{
